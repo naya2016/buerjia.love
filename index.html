@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO 不二家</title>
+    <link rel="stylesheet" href="styles.css">
+    <!--=============== 网页预加载 ===============-->
+    <link rel="stylesheet" href="./loader-noanimation/loader.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+    <!--=============== REMIXICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!--=============== 登陆框css样式 ===============-->
+    <link rel="stylesheet" href="login-assets/css/styles.css">
+    <!--=============== 导航栏css样式 ===============-->
+    <link rel="stylesheet" href="/assets/navbar/style.css">
+    <link rel="stylesheet" href="/assets/videocover/css.css">
+</head>
+<body>
+        <!-- 网页预加载 -->
+        <div id="preloader">
+            <img src="/assets/happy.gif" alt="Loading">
+        </div>
+
+        <!-- 包含主体 -->
+<div id="content">
+
+
+    <div id="app">
+        <!-- 内容将在这里动态加载 -->
+    </div>
+
+    <!-- navbar -->
+<header class="cd-header">
+    <div class="header-wrapper">
+        <div class="nav-but-wrap">
+            <div class="menu-icon hover-target">
+                <span class="menu-icon__line menu-icon__line-left"></span>
+                <span class="menu-icon__line"></span>
+                <span class="menu-icon__line menu-icon__line-right"></span>
+            </div>					
+        </div>					
+    </div>				
+</header>
+
+<div class="nav">
+    <div class="nav__content">
+        <ul class="nav__list">
+            <li class="nav__list-item active-nav"><a href="#" class="hover-target">主页</a></li>
+            <li class="nav__list-item"><a href="/assets/nav/index.html" class="hover-target">去往</a></li>
+            <li class="nav__list-item"><a href="#" class="hover-target">祝福</a></li>
+            <li class="nav__list-item"><a href="#" class="hover-target">星空</a></li>
+            <li class="nav__list-item"><a href="#" class="hover-target">我们</a></li>
+        </ul>
+    </div>
+</div>	
+
+<div class='cursor' id="cursor"></div>
+<div class='cursor2' id="cursor2"></div>
+<div class='cursor3' id="cursor3"></div>
+
+
+<div class="video-box">
+    <div class="item">
+      <span>1</span>
+      <video id="videos0" autoplay muted loop>
+        <source src="/assets/videocover/video/1.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="item">
+      <span>2</span>
+      <video id="videos1" autoplay muted loop>
+        <source src="/assets/videocover/video/2.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="item">
+      <span>3</span>
+      <video id="videos2" autoplay muted loop>
+        <source src="/assets/videocover/video/3.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+
+
+
+</div>
+
+    <!-- 网页加载动画js -->
+    <script src="./loader-noanimation/loader.js"></script>
+    <script src="script.js"></script>
+    <script src="/auth/auth.js"></script>
+    <!-- navbar js -->
+<!-- 退出登录
+================================================== -->
+
+    <!-- 新的退出按钮 -->
+    <a id="logoutButton" class="link-to-portfolio" title="退出登录"></a>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+  <script  src="/assets/navbar/script.js"></script>
+  <script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+  <script src="/assets/videocover/js.js"></script>
+</body>
+</html>
+

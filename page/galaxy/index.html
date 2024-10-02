@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+  <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/loader/preloader.css">
+
+
+  <title>For 不二家</title>
+
+  <!-- Bootstrap CSS & Fontawesome-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- 全部改为绝对路径，因为用Ajax加载需要用绝对路径，否则无法加载 -->
+  <link rel="stylesheet" href="/page/galaxy/src/style.min.css">
+      <!-- 引入认证脚本 -->
+      <script src="/auth/auth.js" defer></script>
+      <script>
+          document.addEventListener('DOMContentLoaded', () => {
+              // 检查登录状态，非首页
+              auth.checkLogin(false);
+          });
+      </script>
+
+
+</head>
+<body>
+
+  <div class="preloader-container" id="preloader">
+    <img src="/assets/happy.gif" alt="Loading..." class="preloader-gif">
+</div>
+<div class="content-container">
+    <!-- 页面内容 -->
+
+
+
+  <!-- 网页的主体内容，包含多个div元素，每个div代表一个部分 -->
+
+  <section class="intro">
+    <div class="container">
+      <div class="wavy d-flex">
+        <span>向</span>
+        <span>下</span>  
+        <span>滑</span>
+        <span>动</span>
+        <span>鼠</span>
+        <span>标</span>
+        <span>哦</span>
+        <span>~</span>
+        <span>小</span>
+        <span>可</span>
+        <span>爱</span>
+      </div>
+    </div>
+  </section>
+
+  <a class="photo-gallery-trigger"></a>
+  <section class="photo-gallery">
+    <div class="container">
+      <div class="photo-gallery-item grid">
+        <div class="responsive-img" style="background-image: url(./img/#.jpg);">
+        </div>
+        <p>生日</p>
+      </div>
+      <div class="photo-gallery-item grid">
+        <div class="responsive-img" style="background-image: url(./img/#.jpg);">
+        </div>
+        <p>快乐！！！</p>
+      </div>
+    </div>
+  </section>
+
+  <a class="video-gallery-trigger"></a>
+  <section class="video-gallery">
+    <div class="banner grid">
+      <video autoplay muted loop>
+        <source src="/page/galaxy/video/space.mp4" type="video/mp4">
+      </video>
+      <h2>LIKE ALWAYS</h2>
+      <div class="container">
+        <h3>快看，所有星星都在为你闪耀！！！</h3>
+      </div>
+    </div>
+  </section>
+
+  <img class="scratch-img" src="/page/galaxy/img/scratch_img.png" alt="ERASE ME">
+
+  <section class="scratch" id="scratch">
+    <canvas id="scratch-canvas"></canvas>
+    <div class="scratch-container">
+      <iframe src="/page/birthdaycard/index.html" allow="autoplay; fullscreen" allowfullscreen sandbox="allow-scripts allow-same-origin"></iframe>
+    </div>
+    <a href="/page/whisper/index.html" id="gif-button"></a> <!-- 透明层按钮 -->
+</section>
+
+
+  <!-- jQuery, Popper.js & Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineLite.min.js" integrity="sha256-dOAYt+bDtcwODMeQ8lYDO5ezeDxYU1KbxhAban7SMVk=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js" integrity="sha256-ABrLsV2caVEMCBfm3eNhv/CYQG+tGCqzw2f4b/Pag0M=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js" integrity="sha256-2p2tRZlPowp3P/04Pw2rqVCSbhyV/IB7ZEVUglrDS/c=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js" integrity="sha256-+9YNuItWuR4sbqeaNiJOxG0BvptYz4fbUXbIZoH5Jwo=" crossorigin="anonymous"></script>
+
+  <script src="/page/galaxy/src/scratch.min.js"></script>
+  <script src="/page/galaxy/src/script.min.js"></script>
+  <script src="/page/galaxy/js/guaguale.js"></script>
+  <script src="/loader/loader.js"></script>
+
+
+
+</div>
+
+
+</body>
+</html>

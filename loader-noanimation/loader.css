@@ -1,0 +1,60 @@
+/* 基础样式 */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* 保持隐藏滚动条 */
+    font-family: Arial, sans-serif;
+    transition: filter 0.5s ease; /* 为整个页面添加过渡效果 */
+}
+
+/* 预加载器样式 */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.5); /* 调整透明度为0.5以增强模糊效果 */
+    backdrop-filter: blur(10px); /* 应用高斯模糊 */
+    -webkit-backdrop-filter: blur(10px); /* 针对Safari的前缀 */
+    z-index: 1000;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 1s ease, visibility 1s ease; /* 添加渐隐动画 */
+}
+
+/* 预加载器中的图片 */
+#preloader img {
+    width: 100px;
+    height: 100px;
+}
+
+/* 内容区域样式 */
+#content {
+    opacity: 1; /* 将初始透明度设置为1 */
+    filter: none; /* 移除模糊效果 */
+    transition: opacity 1s ease, filter 1s ease; /* 添加过渡效果 */
+}
+
+/* 加载时内容不可见且背景模糊 */
+body.loading #content {
+    opacity: 0; /* 渐隐内容 */
+    filter: blur(5px); /* 应用模糊效果 */
+}
+
+/* 加载完成时显示内容并移除模糊 */
+body.loaded #content {
+    opacity: 1; 
+    filter: none; /* 确保没有模糊效果 */
+}
+
+/* 加载完成时隐藏预加载器 */
+body.loaded #preloader {
+    opacity: 0;
+    visibility: hidden;
+}
