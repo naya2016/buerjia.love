@@ -132,16 +132,18 @@ section {
 }
 
 .photo-gallery-item {
-    background-image: url("../img/bg.png");
+    background: rgba(255, 255, 255, 0.5); /* 使用白色的半透明背景 */
+    backdrop-filter: blur(10px); /* 添加高斯模糊效果 */
     color: #c7b299;
     grid-template-columns: repeat(5, 1fr);
     align-items: center;
     justify-items: center;
     width: 80%;
     margin: 0.5em;
-    border: 0.2em solid #140e0a;
-    border-radius: 7px
+    border: 0.2em solid rgba(20, 14, 10, 0.5); /* 设置半透明的边框 */
+    border-radius: 7px;
 }
+
 
 .photo-gallery-item div {
     height: 35vh
