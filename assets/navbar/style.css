@@ -519,8 +519,8 @@ body.light .switch-wrap p span:nth-child(1):before {
 /* #Link to page
 ================================================== */
 .link-to-portfolio {
-	  position: fixed;
-    bottom: 40px;
+    position: fixed;
+    top: 40px;  /* 修改此行，将 bottom 改为 top */
     right: 50px;
     z-index: 200;
     cursor: pointer;
@@ -530,12 +530,13 @@ body.light .switch-wrap p span:nth-child(1):before {
     border-radius: 3px;
     background-position: center center;
     background-size: 65%;
-  background-repeat: no-repeat;
+    background-repeat: no-repeat;
     background-image: url('/assets/exit.png');
     box-shadow: 0 0 0 2px rgba(255,255,255,.1);
     transition: opacity .2s, border-radius .2s, box-shadow .2s;
     transition-timing-function: ease-out;
 }
+
 .link-to-portfolio:hover {
     opacity: 0.8;
     border-radius: 50%;
