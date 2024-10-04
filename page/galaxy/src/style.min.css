@@ -121,9 +121,11 @@ section {
 }
 
 .photo-gallery {
-    background-color: #fff;
-    font-size: 100%
+    background-image: url("/page//galaxy/img/zzy.jpg"); /* 替换为您的图片路径 */
+    background-size: cover; /* 使用cover形式 */
+    font-size: 100%;
 }
+
 
 .photo-gallery .container {
     padding: 0.5em
