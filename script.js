@@ -203,18 +203,31 @@ function handleOpenButtonClick(e) {
     const buttonCenterX = rect.left + rect.width / 2;
     const buttonCenterY = rect.top + rect.height / 2;
 
+    // 设置 iframe 的源
     nextPageFrame.src = './page/explanations/index.html';
 
+    // 修改标题的透明度
     title.style.opacity = '0';
 
+    // 显示覆盖层
     overlay.style.display = 'flex';
     overlay.style.width = overlay.style.height = `${button.offsetWidth}px`;
     overlay.style.left = `${buttonCenterX}px`;
     overlay.style.top = `${buttonCenterY}px`;
     overlay.style.transform = 'translate(-50%, -50%)';
 
+    // 禁用按钮动画
     button.style.animation = 'none';
 
+    // 增加一个延时，模拟点击音乐播放器的暂停按钮
+    setTimeout(() => {
+        const pauseButton = document.querySelector('.myhkpause');
+        if (pauseButton) {
+            pauseButton.click(); // 模拟点击
+        }
+    }, 100); // 你可以根据需要调整这个延迟时间
+
+    // 增加覆盖层的最大尺寸
     setTimeout(() => {
         const maxDim = Math.max(window.innerWidth, window.innerHeight);
         overlay.style.width = overlay.style.height = `${maxDim * 2.5}px`;
@@ -225,6 +238,7 @@ function handleOpenButtonClick(e) {
         nextPageFrame.style.zIndex = '30';
     }, 1000);
 }
+
 
 // 使用requestAnimationFrame更新光标
 let mouseX = 0, mouseY = 0;
