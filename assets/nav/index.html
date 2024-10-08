@@ -9,6 +9,14 @@
     <link rel="Shortcut Icon" href="/assets/favicon/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="/assets/nav/css.css">
     <link rel="stylesheet" href="/loader/preloader.css">
+          <!-- 引入认证脚本 -->
+          <script src="/auth/auth.js" defer></script>
+          <script>
+              document.addEventListener('DOMContentLoaded', () => {
+                  // 检查登录状态，非首页
+                  auth.checkLogin(false);
+              });
+          </script>
 </head>
 
 <body>
