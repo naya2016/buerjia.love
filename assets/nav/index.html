@@ -16,33 +16,41 @@
     </div>
     <div class="content-container">
         <!-- 页面内容 -->
-
-
-    <div class="shell">
-        <div class="box">
-            <img src="./home.png">
-            <span>主页</span>
-        </div>
-        <div class="box">
-            <img src="./wish.png">
-            <span>祝福</span>
-        </div>
-        <div class="box">
-            <img src="./galaxy.png">
-            <span>星空</span>
-        </div>
-        <div class="box">
-            <img src="./us.png">
-            <span>我们</span>
-        </div>
-        <div class="box">
-            <img src="#">
-            <span>彩蛋</span>
+        <div class="shell">
+            <div class="box" onclick="redirectTo('https://example.com')">
+                <img src="./home.png">
+                <span>主页</span>
+            </div>
+            <div class="box" onclick="redirectTo('https://example.com/wish')">
+                <img src="./wish.png">
+                <span>祝福</span>
+            </div>
+            <div class="box" onclick="redirectTo('https://example.com/galaxy')">
+                <img src="./galaxy.png">
+                <span>星空</span>
+            </div>
+            <div class="box" onclick="redirectTo('https://example.com/us')">
+                <img src="./us.png">
+                <span>我们</span>
+            </div>
+            <div class="box" onclick="redirectTo('https://example.com/egg')">
+                <img src="#">
+                <span>彩蛋</span>
+            </div>
         </div>
     </div>
 
-
-</div>
+    <script>
+        function redirectTo(url) {
+            // 显示预加载动画
+            document.getElementById('preloader').style.display = 'flex'; // 假设使用 flex 进行居中显示
+            
+            // 设置定时器，2秒后跳转
+            setTimeout(function() {
+                window.location.href = url;
+            }, 2000);
+        }
+    </script>
 
     <script src="/loader/loader.js"></script>
 </body>
